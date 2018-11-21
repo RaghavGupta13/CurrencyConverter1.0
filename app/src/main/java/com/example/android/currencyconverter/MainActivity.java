@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         Log.i("Info", "Button Pressed");
         EditText text = (EditText) findViewById(R.id.dollarAmt);
         double dAmt = Double.parseDouble(text.getText().toString());
-        double rAmt = Math.floor((dAmt * 65.08)*100)/100;
+        double rAmt = Math.floor((dAmt * 72)*100)/100;
 
         Toast.makeText(this, "$ "+ dAmt + " = " + "\u20B9 " + rAmt, Toast.LENGTH_SHORT).show();
     }
